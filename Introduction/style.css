@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 /* Some default style to make each box visible */
 .box {
   color: white;
@@ -37,4 +43,10 @@
 }
 .box10 {
   background: #16a085;
+}
+
+.container{
+    display: flex;
+    border: 5px solid goldenrod;
+    height: 100vh;
 }
