@@ -49,24 +49,12 @@
 .container {
   display: flex;
   border: 10px solid rgb(185, 50, 34);
-  align-content: end;
   height: 100vh;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
 }
 
-.box1 {
-  font-size: 30px;
-}
-
-.box2 {
-  font-size: 45px;
-}
-
-.box3 {
-  font-size: 60px;
-}
-
-.box4 {
-  font-size: 75px;
+.box {
+  width: 33.333%;
 }
