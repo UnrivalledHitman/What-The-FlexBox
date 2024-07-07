@@ -50,5 +50,9 @@
   display: flex;
   border: 5px solid goldenrod;
   height: 100vh;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 33.3333%;
 }
