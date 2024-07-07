@@ -48,11 +48,11 @@
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
-  border: 5px solid goldenrod;
-  height: 100vh;
-  flex-wrap: wrap;
 }
 
 .box {
-  width: 33.3333%;
+  flex: 1;
+  order: 1;
 }
+
+
