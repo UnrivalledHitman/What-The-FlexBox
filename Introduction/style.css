@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /* Some default style to make each box visible */
@@ -45,8 +45,10 @@
   background: #16a085;
 }
 
-.container{
-    display: flex;
-    border: 5px solid goldenrod;
-    height: 100vh;
+/* We start writing out flexbox here. The above is just page setup */
+.container {
+  display: flex;
+  border: 5px solid goldenrod;
+  height: 100vh;
+  flex-direction: column;
 }
