@@ -7,7 +7,7 @@
 /* Some default style to make each box visible */
 .box {
   color: white;
-  font-size: 100px;
+  font-size: 40px;
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -48,11 +48,8 @@
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 10px solid black;
+  height: 100vh;
 }
-
-.box {
-  flex: 1;
-  order: 1;
-}
-
-
