@@ -45,32 +45,51 @@ a:hover {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Ensures wrapping at smaller sizes */
 }
 
 .flex-nav li {
-  flex: 3;
+  flex: 1 1 auto; /* Ensures equal distribution of space */
 }
 
 .flex-nav .social {
-  flex: 1;
+  order: 1; /* Move social items to the end */
 }
 
-@media all and(max-width: 1000px) {
-  .flex-nav ul {
-    flex-wrap: wrap;
-  }
-
+@media all and (max-width: 1000px) {
   .flex-nav li {
-    flex: 1 1 50%;
+    flex: 1 1 33.33%; /* Each item takes a third of the width */
   }
 
   .flex-nav .social {
-    flex: 1 1 25%;
+    flex: 1 1 25%; /* Social items take a quarter of the width */
+    order: 2; /* Ensures social items come after main items */
+    text-align: center; /* Center-align the social icons */
   }
 }
 
-@media all and(max-width: 500px) {
+@media all and (max-width: 500px) {
   .flex-nav li {
-    flex-basis: 100%;
+    flex: 1 1 50%; /* Items take half the width, two columns */
+  }
+
+  .flex-nav .social {
+    flex: 1 1 25%; /* Social items take a quarter of the width */
+  }
+
+  .flex-nav .social:nth-child(7) {
+    order: 2; /* First social icon in the new row */
+  }
+
+  .flex-nav .social:nth-child(8) {
+    order: 3; /* Second social icon in the new row */
+  }
+
+  .flex-nav .social:nth-child(9) {
+    order: 4; /* Third social icon in the new row */
+  }
+
+  .flex-nav .social:nth-child(10) {
+    order: 5; /* Fourth social icon in the new row */
   }
 }
