@@ -35,6 +35,31 @@ a:hover {
 
 /* First Flex Item */
 .slider-nav li {
-  flex: 1;
+  flex: 2; /* This is flex item -ish */
   border: 1px solid red;
+  text-align: center;
+  display: flex; /*This is flex container -ish*/
+  align-items: stretch;
+}
+
+.slider-nav .arrow {
+  flex: 1;
+}
+
+.arrow a{
+    font-size: 30px;
+}
+
+.slider-nav a {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    /* We want to stretch as well and center */
+
+}
+
+/* This is the flex item */
+.slider-nav span{
+    display: block;
+    width: 100%;
 }
