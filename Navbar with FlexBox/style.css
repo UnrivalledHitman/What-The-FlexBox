@@ -96,4 +96,42 @@ footer {
   .flex-nav li {
     flex-basis: 100%;
   }
+
+  /* Flex Container */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper > * {
+    order: 9999;
+  }
+
+  .flex-nav {
+    order: 1;
+  }
+
+  .toggleNav {
+    display: block;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+
+  .flex-nav ul.open {
+    display: flex;
+  }
+
+  .top {
+    order: 2;
+  }
+
+  .details {
+    order: 3;
+  }
+
+  .signup {
+    order: 4;
+  }
 }
