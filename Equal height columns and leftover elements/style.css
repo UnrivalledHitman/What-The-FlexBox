@@ -1,7 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
+/* Some initial CSS setup - nothing to do with flexbox */
+html {
   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
 }
 
 a {
@@ -21,4 +32,15 @@ a {
   margin: 10px;
   padding: 20px;
   font-size: 30px;
+}
+
+/* Flexbox starts here */
+.elements{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.item{
+  flex: 1 1 calc(33.33% - 20px);
 }
